@@ -1,0 +1,56 @@
+services:
+  - type: web
+    name: pharos-realfi-security-scout
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8787
+      - key: PHAROS_RPC
+        value: https://rpc.pharos.xyz
+      - key: PHAROS_CHAIN_ID
+        value: "1672"
+      - key: USDC_ADDRESS
+        value: 0xC879C018dB60520F4355C26eD1a6D572cdAC1815
+      - key: USDC_NAME
+        value: USDC
+      - key: SCAN_FEE_USDC
+        value: "0.010000"
+      - key: X402_ALLOW_INSECURE_DEV
+        value: "false"
+      - key: PAY_TO_ADDRESS
+        sync: false
+      - key: FACILITATOR_URL
+        sync: false
+      - key: SERVER_URL
+        sync: false
+      - key: X402_FACILITATOR_API_KEY
+        sync: false
+
+  - type: web
+    name: pharos-x402-facilitator
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:facilitator:prod
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FACILITATOR_PORT
+        value: "3001"
+      - key: PORT
+        value: "3001"
+      - key: PHAROS_RPC
+        value: https://rpc.pharos.xyz
+      - key: PHAROS_CHAIN_ID
+        value: "1672"
+      - key: USDC_ADDRESS
+        value: 0xC879C018dB60520F4355C26eD1a6D572cdAC1815
+      - key: EVM_PRIVATE_KEY
+        sync: false
