@@ -109,7 +109,7 @@ Description:
 An x402-powered onchain security skill for Pharos agents. Agents pay a tiny USDC micro-fee to instantly get a professional risk report before interacting with any contract or RealFi position (RWA vaults, yield strategies, Agra orderbook, rcPC, pAlpha, etc.). The report includes reentrancy signals, admin privilege checks, proxy/upgradeability detection, timelock coverage, external call risk, access control hints, and an overall Low/Medium/High risk score with plain-English recommendations.
 
 GitHub Repo:
-https://github.com/<your-org>/pharos-realfi-security-scout
+https://github.com/darkfallX/Pharos-Realfi-Security-Scout
 
 How to Run:
 1) cd backend && npm install
