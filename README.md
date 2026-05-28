@@ -98,26 +98,4 @@ This project delivers an x402-paid onchain security scout that lets AI agents pe
   - `contractAddress` (required, EVM address)
   - `context` (optional string)
 
-## Campaign submission (exact text for Discord)
-
-Copy-paste the message below into `#skill-submission`:
-
-```text
-Skill Name: Pharos RealFi Security Scout
-
-Description:
-An x402-powered onchain security skill for Pharos agents. Agents pay a tiny USDC micro-fee to instantly get a professional risk report before interacting with any contract or RealFi position (RWA vaults, yield strategies, Agra orderbook, rcPC, pAlpha, etc.). The report includes reentrancy signals, admin privilege checks, proxy/upgradeability detection, timelock coverage, external call risk, access control hints, and an overall Low/Medium/High risk score with plain-English recommendations.
-
-GitHub Repo:
-https://github.com/darkfallX/Pharos-Realfi-Security-Scout
-
-How to Run:
-1) cd backend && npm install
-2) copy .env.example .env
-3) fill PAY_TO_ADDRESS and USDC_ADDRESS
-4) npm run dev
-5) POST /scan with x-payment-proof and contractAddress
-
-Why It Matters:
-This skill gives Pharos agents a machine-speed safety checkpoint before moving money, reducing avoidable exploits while creating sustainable security micro-economics via x402 + native USDC.
-```
+## GOCTO 
