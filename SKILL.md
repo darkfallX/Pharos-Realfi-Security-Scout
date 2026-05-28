@@ -21,7 +21,7 @@ entrypoint:
       - X-PAYMENT
       - x-payment-proof
 env:
-  SERVER_URL: http://localhost:8787
+  SERVER_URL: https://pharos-realfi-security-scout-production.up.railway.app
 ---
 
 # Pharos RealFi Security Scout
@@ -29,7 +29,7 @@ env:
 Pharos RealFi Security Scout is a production-grade onchain risk skill for agent-native finance.  
 Before an agent deposits, swaps, routes strategy capital, or interacts with an RWA vault, it can pay a tiny USDC micro-fee via x402 and receive an instant structured risk report.
 
-Set `SERVER_URL` to your deployed API base (e.g. `https://your-app.onrender.com` locally `http://localhost:8787`).
+Set `SERVER_URL` to your deployed API base (e.g. `https://pharos-realfi-security-scout-production.up.railway.app`).
 
 ## What this skill checks
 
