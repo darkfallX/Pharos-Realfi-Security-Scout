@@ -10,6 +10,8 @@
     "start:facilitator": "tsx src/facilitator.ts",
     "start:facilitator:prod": "node dist/facilitator.js",
     "test:x402:scan": "tsx src/scripts/x402-scan-client.ts",
+    "test:scan:medium": "tsx src/scripts/test-scan-low-risk.ts",
+    "test:scan:high": "tsx src/scripts/test-scan-high-risk.ts",
     "lint": "tsc --noEmit"
   },
   "keywords": [
