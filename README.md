@@ -42,7 +42,7 @@ This project delivers an x402-paid onchain security scout that lets AI agents pe
    - `npm install`
 2. Configure environment:
    - `copy .env.example .env` (Windows) or `cp .env.example .env` (macOS/Linux)
-   - `PAY_TO_ADDRESS` default: `0xdd29E2aD19292C1Eb2844ea07888c987a6D13B74`
+   - `PAY_TO_ADDRESS` default: `0xee9714646473902a4d82de393fe01a5dc446d049`
    - `USDC_ADDRESS` default (official): `0xC879C018dB60520F4355C26eD1a6D572cdAC1815`
    - For local dev, leave `X402_VERIFY_URL` empty
    - For production, set `X402_VERIFY_URL` to your verifier service URL
